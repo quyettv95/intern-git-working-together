@@ -1,10 +1,9 @@
-const arr = [1, 2, 3, 5, 4];
+const arr = [1, 2, 3, 4, 5];
 let flag = true;
-for (let i = 0; i < arr.length - 1; i++) {
-  for (let j = i + 1; j < arr.length; j++) {
-    if (arr[i] > arr[j]) {
-      flag = false;
-    }
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] > arr[i + 1]) {
+    flag = false;
+    break;
   }
 }
 console.log(flag);
