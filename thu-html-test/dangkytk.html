@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form đăng ký tài khoản</title>
+  </head>
+  <body>
+    <h1>Form đang ký tài khoản</h1>
+    <form action="" id="test">
+      <div border="1">
+        <fieldset>
+            <legend><h2>Thông tin tài khoản</h2></legend>
+          
+          <table>
+            <tbody>
+              <tr>
+                <td align="right"><b>Ảnh đại diện:</b></td>
+                <td><input type="file" /></td>
+              </tr>
+              <tr>
+                <td align="right"><b>Email</b></td>
+                <td><input type="email" /></td>
+              </tr>
+              <tr>
+                <td align="right"><b>Số điện thoại:</b></td>
+                <td><input type="tel" /></td>
+              </tr>
+              <tr>
+                <td align="right"><b>Tên đăng nhập:</b></td>
+                <td><input type="text" /></td>
+              </tr>
+              <tr>
+                <td align="right"><b>Mật Khẩu:</b></td>
+                <td><input type="password" /></td>
+              </tr>
+              <tr>
+                <td align="right"><b>Nhập lại mật khẩu</b></td>
+                <td><input type="password" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </div>
+      <br />
+      <br />
+
+      <div>
+        <h2>Thông tin cá nhân</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td align="right"><b>Họ Tên</b></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td align="right"><b>Ngày Sinh</b></td>
+              <td><input type="date" /></td>
+            </tr>
+            <tr>
+              <td align="right"><b>Giới Tính</b></td>
+              <td>
+                <input type="radio" name="gender" value="Nam" />Nam
+                <input type="radio" name="gender" value="Nữ" />Nữ
+                <input type="radio" name="gender" value="khác" />khác
+              </td>
+            </tr>
+            <tr>
+              <td align="right"><b>Công việc</b></td>
+              <td>
+                <input type="checkbox" name="" id="" /> Sinh viên
+                <input type="checkbox" name="" id="" /> Đi làm
+                <input type="checkbox" name="" id="" /> Khác
+              </td>
+            </tr>
+            <tr>
+              <td align="right"><b>Địa chỉ</b></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td align="right"><b>Thành Phố</b></td>
+              <td>
+                <select name="quequan" id="hometown">
+                  <option value="default">---Chọn TP---</option>
+                  <option value="default">Ha Noi</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td align="right"><b>Quận / Huyện</b></td>
+              <td>
+                <select name="quequan" id="hometown">
+                  <option value="default">---Chọn quan huyen---</option>
+                  <option value="default">Hoàng Mai</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td align="right"><b>Phường / Xã</b></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td align="right"><b>Mô Tả</b></td>
+              <td>
+                <textarea
+                  name="selfdescribe"
+                  id="self-describe"
+                  cols="30"
+                  rows="7"
+                ></textarea>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <input type="submit" name="dangky" />
+        <input type="reset" name="reset" />
+      </div>
+    </form>
+  </body>
+</html>
