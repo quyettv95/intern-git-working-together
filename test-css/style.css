@@ -30,7 +30,7 @@ html {
 .menu__item {
   text-transform: uppercase;
   font-size: 14px;
-  padding: 10px 16px;
+  padding: 16px 18px;
   font-weight: 300;
   background-color: #232323;
 }
@@ -95,7 +95,7 @@ html {
   transform: translateY(-10px) translateX(-10px);
 }
 .content__img-a::before {
-  content: "190 x 180px";
+  content: "290 x 180px";
   height: 180px;
   color: white;
   display: flex;
@@ -103,6 +103,7 @@ html {
   align-items: center;
 }
 .content__heading {
+  font-style: italic;
   font-size: 18px;
   font-weight: 400;
   padding: 15px 0;
@@ -133,6 +134,7 @@ html {
   width: 50%;
 }
 .content-second__heading {
+  font-style: italic;
   font-size: 28px;
   padding-bottom: 15px;
 }
