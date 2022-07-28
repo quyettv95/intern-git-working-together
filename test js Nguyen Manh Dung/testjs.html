@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+        <script>
+        function soTien(sotien) {
+            let dem10 = 0;
+        let dem20 = 0;
+        let dem50 = 0;
+        let dem100= 0;
+        let dem200 = 0;
+        let dem500 = 0;
+            while (sotien >= 0) {
+                if (sotien >= 500) 
+                {
+                    sotien -= 500;
+                   dem500++;
+                }
+                else if (sotien >= 200)
+                {
+                    sotien -= 200;
+                    dem200++;
+                }
+                else if (sotien >= 100)
+                 {
+                    sotien -= 100;
+                    dem100++;
+                }
+                else if (sotien >= 50) 
+                {
+                    sotien -= 50;
+                    dem50++;
+                }
+                else if (sotien >= 20) 
+                {
+                    sotien -= 20;
+                    dem20++;
+                }
+                else if (sotien >= 10)
+                {
+                    sotien -= 10;
+                    dem10++;
+                }
+            }
+            console.log(" 500k : " + dem500);
+            console.log(" 200k : " + dem200);
+            console.log("100k :" + dem100);
+            console.log("50k : " + dem50);
+            console.log(" 20k :" + dem20);
+            console.log(" 10k : " + dem10);
+
+        }
+    </script>
+</body>
+
+</html>
