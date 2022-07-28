@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function recive(money){
+            var count500 = 0;
+            var count200 = 0;
+            var count100 = 0;
+            var count50 = 0;
+            var count20 = 0;
+            var count10 = 0;
+            while(money>0){
+                if(money >= 500){
+                    money -= 500;
+                    count500++;
+                }else if(money >= 200){
+                    money -= 200;
+                    count200++;
+                }else if(money >= 100){
+                    money -= 100;
+                    count100++;
+                }else if(money >= 50){
+                    money -= 50;
+                    count50++;
+                }else if(money >= 20){
+                    money -= 20;
+                    count20++;
+                }else if(money >= 10){
+                    money -= 10;
+                    count10++;
+                }
+            }
+            console.log("to 500k " + count500);
+            console.log("to 200k " + count200);
+            console.log("to 100k " + count100);
+            console.log("to 50k " + count50);
+            console.log("to 20k " + count20);
+            console.log("to 10k " + count10);
+
+        }
+    </script>
+</body>
+</html>
