@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="slide-show">
+        <div class="next"><i class="fa-solid fa-angle-right"></i></div>
+        <div class="previous"><i class="fa-solid fa-angle-left"></i></div>
+        <img src="./assets/img/img1.jpeg" alt="" class="slide-img" />
+      </div>
+      <div class="list-img"></div>
+    </div>
+
+    <script>
+      const listImgElement = document.querySelector(".list-img");
+      for (let i = 1; i < 10; i++) {
+        let html = `<img src="./assets/img/img${i}.jpeg" alt="" class="img-item " />`;
+        listImgElement.insertAdjacentHTML("beforeend", html);
+      }
+
+      const nextElement = document.querySelector(".next");
+      const previousElement = document.querySelector(".previous");
+      const imgSlideElements = document.querySelectorAll(".img-item");
+      const slideElement = document.querySelector(".slide-img");
+      let currentSlide = 1;
+      imgSlideElements[0].classList.add("active");
+      //next btn
+      nextElement.addEventListener("click", function () {
+        if (currentSlide == 9) {
+          currentSlide = 1;
+        } else {
+          currentSlide += 1;
+        }
+        if (document.querySelector(".active")) {
+          document.querySelector(".active").classList.remove("active");
+        }
+        imgSlideElements[currentSlide - 1].classList.add("active");
+        slideElement.src = `./assets/img/img${currentSlide}.jpeg`;
+      });
+      //previous
+      previousElement.addEventListener("click", function () {
+        if (currentSlide == 1) {
+          currentSlide = 9;
+        } else {
+          currentSlide -= 1;
+        }
+        if (document.querySelector(".active")) {
+          document.querySelector(".active").classList.remove("active");
+        }
+        imgSlideElements[currentSlide - 1].classList.add("active");
+        slideElement.src = `./assets/img/img${currentSlide}.jpeg`;
+      });
+
+      //select slide
+
+      for (let i = 0; i < imgSlideElements.length; i++) {
+        imgSlideElements[i].addEventListener("click", function () {
+          currentSlide = i + 1;
+          slideElement.src = `./assets/img/img${currentSlide}.jpeg`;
+        });
+      }
+      setInterval(function () {
+        if (currentSlide == 9) {
+          currentSlide = 1;
+        } else {
+          currentSlide += 1;
+        }
+        if (document.querySelector(".active")) {
+          document.querySelector(".active").classList.remove("active");
+        }
+        imgSlideElements[currentSlide - 1].classList.add("active");
+        slideElement.src = `./assets/img/img${currentSlide}.jpeg`;
+      }, 5000);
+    </script>
+  </body>
+</html>
