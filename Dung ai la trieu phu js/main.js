@@ -222,6 +222,8 @@ function timeLeft() {
      document.querySelector(".total-money").innerText = "Tổng: " + total + " vnđ";
      supportBtn.disabled = false;
   supportBtn.style.cursor = "pointer";
+ callBtn.disabled = false;
+ callBtn.style.cursor = "pointer";
      renderQuestion(currentQuestion);
   }
     function exit(){
@@ -371,6 +373,8 @@ let answerElements = document.querySelectorAll(".content-answer-item");
   let answerAll = document.querySelectorAll(".content-answer-item");
 
 supportBtn.addEventListener("click", function () {
+  this.bgSound = new sound('5050.mp3');
+  this.bgSound.start();
   let { a, b, c, d } = listquestions[currentQuestion].options;
 
   let answers = [a, b, c, d];
@@ -389,5 +393,10 @@ supportBtn.addEventListener("click", function () {
 });
 
 
-
-
+let callBtn = document.querySelector('.support-btn-item')
+callBtn.addEventListener("click", function(){
+  this.bgSound = new sound('phone.mp3');
+  this.bgSound.start();
+  callBtn.disabled = "true";
+  callBtn.style.cursor = "not-allowed";
+});
