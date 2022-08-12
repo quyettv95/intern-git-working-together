@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="slider">
+        <div id="previous-btn">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div id="next-btn">
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <img src="" alt="" id="slider" />
+      </div>
+      <div class="img-list">
+        <div class="img-item-container">
+          <img
+            class="img-item"
+            id="img1"
+            src="./assets/img/house1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="img-item-container">
+          <img
+            class="img-item"
+            id="img2"
+            src="./assets/img/house2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="img-item-container">
+          <img
+            class="img-item"
+            id="img3"
+            src="./assets/img/house3.jpg"
+            alt=""
+          />
+        </div>
+        <div class="img-item-container">
+          <img
+            class="img-item"
+            id="img4"
+            src="./assets/img/house4.jpg"
+            alt=""
+          />
+        </div>
+        <div class="img-item-container">
+          <img class="img-item" id="img5" src="./assets/img/map.jpg" alt="" />
+        </div>
+        <div class="img-item-container">
+          <img
+            class="img-item"
+            id="img6"
+            src="./assets/img/slider.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function updateImg(img) {
+        document.getElementById("slider").src = img;
+        // console.log(img);
+      }
+
+      const imgList = document.querySelectorAll(".img-item");
+      const nextImg = document.getElementById("next-btn");
+      const previousImg = document.getElementById("previous-btn");
+
+      var current = 0;
+      updateImg(document.getElementById(imgList[current].id).src);
+
+      //next img
+      nextImg.addEventListener("click", function () {
+        if (current == 5) {
+          current = 0;
+        } else {
+          current++;
+        }
+
+        console.log(imgList[current].id);
+        updateImg(document.getElementById(imgList[current].id).src);
+      });
+
+      //previous img
+      previousImg.addEventListener("click", function () {
+        if (current == 0) {
+          current = 5;
+        } else {
+          current--;
+        }
+
+        console.log(imgList[current].id);
+        updateImg(document.getElementById(imgList[current].id).src);
+      });
+
+      // change on click
+      for (let i = 0; i < imgList.length; i++) {
+        imgList[i].addEventListener("click", () => {
+          updateImg(document.getElementById(imgList[i].id).src);
+          current = i;
+          console.log(imgList[i]);
+        });
+      }
+
+      // auto change
+      setInterval(function () {
+        if (current == 5) {
+          current = 0;
+        } else {
+          current++;
+        }
+        updateImg(document.getElementById(imgList[current].id).src);
+      }, 5000);
+    </script>
+  </body>
+</html>

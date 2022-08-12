@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    color: #ccc;
+    width: 100%;
+    background-color: #333;
+}
+
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px calc((100% - 960px)/2);
+    flex-grow: 1;
+}
+
+
+
+.logo{
+    align-self: stretch;
+    
+}
+
+.logo .logo-title{
+    font-size: 32px;
+    flex-wrap: nowrap;
+}
+
+.text-link{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    
+    background-color: #000;
+}
+
+.link-item{
+    font-size: 16px;
+    padding: 16px 16px;
+}
+
+.link-item:hover{
+    color: orange;
+}
+
+#body{
+    width: 960px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 32px;
+}
+
+#body .slider{
+    width: 960px;
+    height: 360px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.slider:hover{
+    transform: scale(1.05);
+
+}
+
+.slider p{
+    margin: auto;
+}
+
+#body .banners{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+    padding: 0;
+}
+
+.baner-item{
+    /* border: 1px solid #000; */
+   
+}
+
+.img-container{
+    border: 1px solid #000;
+}
+
+.banners .baner-item:nth-child(2){
+    margin: 0 30px;
+}
+
+
+.baner-item .baner-img{
+    width: 290px;
+    height: 180px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    margin: 4px;
+
+}
+
+.baner-img > p{
+    margin: auto;
+}
+
+.baner-img:hover{
+    transform: scale(1.05);
+}
+.baner-body{
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.baner-body .baner-title{
+    font-style: italic;
+    margin-bottom: 16px;
+    font-weight: 550;
+    opacity: 0.6;
+}
+
+.baner-description{
+    margin-bottom: 16px;
+    
+}
+
+
+.read-more-btn{
+    align-self: flex-end;
+  
+}
+.read-more-btn:hover{
+    text-decoration: underline;
+}
+
+a{
+    color: orange;  
+    text-decoration: none;
+    
+}
+
+.big-baner{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.big-baner .baner-body{
+    width: 450px;
+    
+}
+
+.big-baner .baner-title{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.big-baner .big-baner-img{
+    width: 450px;
+    height: 250px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    margin: 4px;
+   
+}
+
+.big-baner-img p{
+    margin: auto;
+}
+
+.big-baner-img:hover{
+    transform: scale(1.05);
+}
+
+
+#footer{
+    background-color: #222;
+    color: #fff;
+}
+.footer-content{
+    margin-top: 32px;
+    width: 960px;
+    margin-left:auto;
+    margin-right: auto;
+    
+}
+
+.footer-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    
+}
+
+.footer-link-item{
+    display: flex;
+    flex-direction: column;
+    min-width: 225px;
+}
+
+.footer-link-item h4{
+    margin: 32px 0;
+    font-style: italic;
+}
+
+.footer-link-item .footer-text{
+    padding: 4px 0;
+    color: orange;
+    border-bottom: 1px solid #ccc;
+   
+    font-size: 14px;
+}
+
+
+.copyright{
+    background-color: #000;
+    padding: 16px 0;
+}
+
+.copyright p{
+    margin: 0 calc((100% - 960px)/2);
+}
+
+
