@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách CV</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="side-bar">
+        <div class="header">
+          <div class="logo">S</div>
+          <p class="side-text">SHiring</p>
+          <i class="fa-solid fa-angle-right collapse"></i>
+          <i class="fa-solid fa-angle-left collapse close"></i>
+        </div>
+        <div class="side-list">
+          <div class="side-item">
+            <i class="fa-solid fa-diagram-project"></i>
+            <p class="side-text">Trích dẫn dữ liệu CV</p>
+          </div>
+          <div class="side-item active">
+            <i class="fa-regular fa-id-card"></i>
+            <p class="side-text">Danh sách cv</p>
+          </div>
+          <div class="side-item">
+            <i class="fa-regular fa-file"></i>
+            <p class="side-text">Mẫu Export CV</p>
+          </div>
+          <div class="side-item">
+            <i class="fa-regular fa-circle-user"></i>
+            <p class="side-text">Tài Khoản</p>
+          </div>
+          <div class="side-item">
+            <i class="fa-regular fa-comment"></i>
+            <p class="side-text">Góp ý về sản phẩm</p>
+          </div>
+        </div>
+        <div class="logout">
+          <div class="side-item">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <p class="side-text">Đăng xuất</p>
+          </div>
+        </div>
+      </div>
+      <div class="cv-view">
+        <div class="header">
+          <div class="title">Danh sách CV</div>
+          <form action="" class="form-name-search">
+            <label for="name-search"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></label>
+            <input
+              type="text"
+              id="name-search"
+              placeholder="Nhập tên ứng viên"
+            />
+          </form>
+          <div class="advance">Tìm kiếm nâng cao</div>
+        </div>
+
+        <div class="cvs">
+          <div class="search">
+            <div class="header">
+              <div class="title">TÌM KIẾM NÂNG CAO</div>
+              <div class="close-search">Đóng lại</div>
+            </div>
+            <form action="" class="search-form"></form>
+          </div>
+
+
+
+          <!-- cv list -->
+          <div class="cv-list">
+            <div class="header">
+              <div class="infor">
+                Tìm thấy: <span class="number-cv active">591</span> ứng viên/<b
+                  >1900</b
+                >
+                ứng viên
+              </div>
+              <div class="option">
+                <div class="select-all">
+                  <i class="check-box" data-check="false"></i> Chọn tất cả
+                  591 ứng viên
+                </div>
+                <div class="export-btn">Export</div>
+              </div>
+            </div>
+  
+            <!-- cv item -->
+            <div class="cv-item">
+              <div class="select" data-check="false">
+                <i class="check-box"></i>
+              </div>
+              <div class="cv-info">
+                <div class="avatar">
+                  <img src="./assets/img/avatar1.png" alt="" />
+                </div>
+                <div class="status">
+                  <div class="status-item">
+                    <h2 class="cv-name">Phạm Văn Trường</h2>
+                  </div>
+                  <div class="status-item">
+                    <div class="status-icon active">
+                      <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <p>Nhân viên Marketing</p>
+                  </div>
+                  <div class="status-item">
+                    <div class="status-icon active">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <p>Hà Nội</p>
+                  </div>
+                  <div class="status-item">
+                    <div class="status-icon active">
+                      <i class="fa-solid fa-filter"></i>
+                    </div>
+                    <p>TopCV</p>
+                  </div>
+                  <div class="status-item">
+                    <div class="status-icon active">
+                      <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <p>Đang offer</p>
+                    <div class="status-icon">
+                      <i class="fa-solid fa-pen"></i>
+                    </div>
+                  </div>
+                  <div class="tag">
+                    <h4>#Tag</h4>
+                    <div class="tag-list">
+                      <div class="tag-item active">PHP</div>
+                      <div class="tag-item active">Senior</div>
+                      <div class="tag-item active">Manager</div>
+                    </div>
+                  </div>
+  
+                  <div class="rating">
+                    <h4>Đánh giá</h4>
+                    <div class="stars">
+                      <p>5/5</p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="detail">
+                  <div class="experience">
+                    <div class="status-item detail-title">KINH NGHIỆM</div>
+                    <div class="status-item">
+                      <div class="status-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                      </div>
+                      <p>Kỹ sư điện (Bộ phận TE) / Công ty Foxconn</p>
+                    </div>
+                    <div class="status-item">
+                      <div class="status-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                      </div>
+                      <p>Kỹ sư điện (Bộ phận TE) / Công ty Foxconn</p>
+                    </div>
+                    <div class="status-item">
+                      <div class="status-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                      </div>
+                      <p>Kỹ sư điện (Bộ phận TE) / Công ty Foxconn</p>
+                    </div>
+                  </div>
+                  <div class="education">
+                    <div class="status-item detail-title">HỌC VẤN</div>
+                    <div class="status-item">
+                      <div class="status-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                      </div>
+                      <p>
+                        Kỹ sư điện (Chuyên ngành điều khiển và tự động hóa) / Đại
+                        học Công nghiệp Hà Nội
+                      </p>
+                    </div>
+                  </div>
+                  <div class="goal">
+                    <div class="status-item detail-title">
+                      MỤC TIÊU TỐT NGHIỆP
+                    </div>
+                    <div class="status-item">
+                      <p>
+                        Áp dụng những kinh nghiệm về kỹ năng bán hàng và sự hiểu
+                        biết về thị trường để trở thành một nhân viên bán hàng
+                        chuyên nghiệp, mang đến nhiều giá trị cho khách hàng. Từ
+                        đó giúp Công ty tăng số lượng khách hàng và mở rộng tập
+                        khách hàng.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- cv item -->
+            <div class="cv-item">
+              <div class="select" data-check="false">
+                <i class="check-box"></i>
+              </div>
+              <div class="cv-info">
+                <div class="avatar">
+                  <img src="./assets/img/avatar1.png" alt="" />
+                </div>
+                <div class="status">
+                  <div class="status-item">
+                    <h2 class="cv-name">Phạm Văn Trường</h2>
+                  </div>
+                  <div class="status-item">
+                    <div class="status-icon active">
+                      <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <p>Nhân viên Marketing</p>
+                  </div>
+                  <div class="status-item">
+                    <div class="status-icon active">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <p>Hà Nội</p>
+                  </div>
+                  <div class="status-item">
+                    <div class="status-icon active">
+                      <i class="fa-solid fa-filter"></i>
+                    </div>
+                    <p>TopCV</p>
+                  </div>
+                  <div class="status-item">
+                    <div class="status-icon active">
+                      <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <p>Đang offer</p>
+                    <div class="status-icon">
+                      <i class="fa-solid fa-pen"></i>
+                    </div>
+                  </div>
+                  <div class="tag">
+                    <h4>#Tag</h4>
+                    <div class="tag-list">
+                      <div class="tag-item active">PHP</div>
+                      <div class="tag-item active">Senior</div>
+                      <div class="tag-item active">Manager</div>
+                    </div>
+                  </div>
+  
+                  <div class="rating">
+                    <h4>Đánh giá</h4>
+                    <div class="stars">
+                      <p>5/5</p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="detail">
+                  <div class="experience">
+                    <div class="status-item detail-title">KINH NGHIỆM</div>
+                    <div class="status-item">
+                      <div class="status-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                      </div>
+                      <p>Kỹ sư điện (Bộ phận TE) / Công ty Foxconn</p>
+                    </div>
+                    <div class="status-item">
+                      <div class="status-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                      </div>
+                      <p>Kỹ sư điện (Bộ phận TE) / Công ty Foxconn</p>
+                    </div>
+                    <div class="status-item">
+                      <div class="status-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                      </div>
+                      <p>Kỹ sư điện (Bộ phận TE) / Công ty Foxconn</p>
+                    </div>
+                  </div>
+                  <div class="education">
+                    <div class="status-item detail-title">HỌC VẤN</div>
+                    <div class="status-item">
+                      <div class="status-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                      </div>
+                      <p>
+                        Kỹ sư điện (Chuyên ngành điều khiển và tự động hóa) / Đại
+                        học Công nghiệp Hà Nội
+                      </p>
+                    </div>
+                  </div>
+                  <div class="goal">
+                    <div class="status-item detail-title">
+                      MỤC TIÊU TỐT NGHIỆP
+                    </div>
+                    <div class="status-item">
+                      <p>
+                        Áp dụng những kinh nghiệm về kỹ năng bán hàng và sự hiểu
+                        biết về thị trường để trở thành một nhân viên bán hàng
+                        chuyên nghiệp, mang đến nhiều giá trị cho khách hàng. Từ
+                        đó giúp Công ty tăng số lượng khách hàng và mở rộng tập
+                        khách hàng.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- cv item -->
+            <div class="cv-item">
+              <div class="select" data-check="false">
+                <i class="check-box"></i>
+              </div>
+              <div class="cv-info">
+                <div class="avatar">
+                  <img src="./assets/img/avatar1.png" alt="" />
+                </div>
+                <div class="status">
+                  <div class="status-item">
+                    <h2 class="cv-name">Phạm Văn Trường</h2>
+                  </div>
+                  <div class="status-item">
+                    <div class="status-icon active">
+                      <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <p>Nhân viên Marketing</p>
+                  </div>
+                  <div class="status-item">
+                    <div class="status-icon active">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <p>Hà Nội</p>
+                  </div>
+                  <div class="status-item">
+                    <div class="status-icon active">
+                      <i class="fa-solid fa-filter"></i>
+                    </div>
+                    <p>TopCV</p>
+                  </div>
+                  <div class="status-item">
+                    <div class="status-icon active">
+                      <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <p>Đang offer</p>
+                    <div class="status-icon">
+                      <i class="fa-solid fa-pen"></i>
+                    </div>
+                  </div>
+                  <div class="tag">
+                    <h4>#Tag</h4>
+                    <div class="tag-list">
+                      <div class="tag-item active">PHP</div>
+                      <div class="tag-item active">Senior</div>
+                      <div class="tag-item active">Manager</div>
+                    </div>
+                  </div>
+  
+                  <div class="rating">
+                    <h4>Đánh giá</h4>
+                    <div class="stars">
+                      <p>5/5</p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="detail">
+                  <div class="experience">
+                    <div class="status-item detail-title">KINH NGHIỆM</div>
+                    <div class="status-item">
+                      <div class="status-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                      </div>
+                      <p>Kỹ sư điện (Bộ phận TE) / Công ty Foxconn</p>
+                    </div>
+                    <div class="status-item">
+                      <div class="status-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                      </div>
+                      <p>Kỹ sư điện (Bộ phận TE) / Công ty Foxconn</p>
+                    </div>
+                    <div class="status-item">
+                      <div class="status-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                      </div>
+                      <p>Kỹ sư điện (Bộ phận TE) / Công ty Foxconn</p>
+                    </div>
+                  </div>
+                  <div class="education">
+                    <div class="status-item detail-title">HỌC VẤN</div>
+                    <div class="status-item">
+                      <div class="status-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                      </div>
+                      <p>
+                        Kỹ sư điện (Chuyên ngành điều khiển và tự động hóa) / Đại
+                        học Công nghiệp Hà Nội
+                      </p>
+                    </div>
+                  </div>
+                  <div class="goal">
+                    <div class="status-item detail-title">
+                      MỤC TIÊU TỐT NGHIỆP
+                    </div>
+                    <div class="status-item">
+                      <p>
+                        Áp dụng những kinh nghiệm về kỹ năng bán hàng và sự hiểu
+                        biết về thị trường để trở thành một nhân viên bán hàng
+                        chuyên nghiệp, mang đến nhiều giá trị cho khách hàng. Từ
+                        đó giúp Công ty tăng số lượng khách hàng và mở rộng tập
+                        khách hàng.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
